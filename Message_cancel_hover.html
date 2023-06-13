@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en-IN">
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width" />
+    <style>
+      #prompt{
+        background-color:rgba(21, 17, 29, 0.83);
+        font-family: Cambria;
+        margin:auto;
+        width:200px;
+        height: 100px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px grey;
+        transition:display 1s;
+      }
+
+      
+      #prompt button{
+        background-color:transparent;
+        display:none;
+        width:22px;
+        height:22px;
+        border: 1px solid black;
+        transition: background 1s;
+        text-align:center;
+        text-align:center;
+        padding: 2px;
+        transition-timing-function: ease;
+        border-radius: 50px;
+        margin:5px 5px 0 0;
+        float: right;
+      }
+
+      #prompt button:hover{
+        background-color:red;
+      }
+
+      #prompt:hover button{
+        display: inline;
+      }
+      .close-icon {
+        width:15px;
+        height:15px;
+      }
+
+      #prompt h4{
+        color: pink;
+        display: inline;
+        margin-left: 5px;
+        text-decoration: underline;
+      }
+      #prompt p{
+        color: crimson;
+        margin:10px 0 0 5px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="prompt">
+      <button onclick="this.parentNode.remove();"><img src="Images/Balloney close.svg" alt="Close" class='close-icon'/></button>
+      <h4>This is a message.</h4>
+      <br>
+      <p>Hover over me..</p>
+      <p>Yoop!</p>
+    </div>
+  </body>
+</html>

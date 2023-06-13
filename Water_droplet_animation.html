@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en-IN">
+
+    <head>
+
+    <title>Water Droplet</title>
+    <style>
+    body{
+        background-color: rgba(32, 182, 182, 0.3);
+    }
+    @keyframes drop{
+        0%{top:0;}
+        40%{top: 505px;height:60px;width:50px;}
+        60%{top: 505px;height:60px;width:50px;}
+        80%{top: 505px;height:25px;width: 20px;}
+        100%{top: 505px;height:0px;width:0px;}
+    }
+    .droplet{
+        margin:auto;
+        width:40px;
+        height:40px;
+        position: relative;
+        border-radius: 40px;
+        box-shadow: 0 10px 10px lightgrey;
+        border: 2px solid grey;
+        background-color: white;
+        animation-name: drop;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+    }
+    /* @keyframes waterState{
+        0%{border-radius: 0px}
+        
+        100%{border-radius:100px}
+    } */
+    .water{
+        margin-left: 400px;
+        margin-top: 500px;
+        width: 200px;
+        border: 2px solid grey;
+        background-color: white;
+        height:200px;
+        border-radius:400px;
+        animation-name: waterState;
+        transform: skew(40deg,20deg) rotate(180deg);
+        /* transform:rotate(45deg); */
+        z-index: 2;
+        overflow: hidden;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+    }
+    .effect{
+
+    }
+    </style>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    </head>
+    <body>
+    <div class="droplet"></div>
+    <div class="water"></div>
+    <div class="effect"></div>
+    </body>
+
+
+</html>

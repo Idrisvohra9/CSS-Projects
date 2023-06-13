@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            width: 100%;
+            overflow-x: hidden;
+            padding-top:130px;
+            padding-bottom:153px;
+            background-image: linear-gradient(160deg, pink,coral);
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        tr,td{
+            padding: 20px;
+        }
+        input{
+            border-radius: 5px;
+            padding: 5px;
+            border: none;
+            background-color: white;
+        }
+        .btn{
+            width: 100%;
+        }
+        form{
+            background-color: rgba(255, 255, 255, 0.59);
+            backdrop-filter: blur(16px) saturate(180%);        
+            padding: 10px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="Login.jsp" method="POST">
+        <table>
+            <tr>
+                <th colspan="2"><h2>Admin Login</h2></th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="e">Email :</label>
+                </td>
+                <td>
+                    <input type="email" name="mail" id="e">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pass">Password :</label>
+                </td>
+                <td>
+                    <input type="password" name="pass">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Login" class="btn">
+                </td>
+                <td><input type="reset" value="Reset" class="btn"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
